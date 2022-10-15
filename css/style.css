@@ -1,0 +1,773 @@
+/* ----------------------------------------------
+ common↓
+---------------------------------------------- */
+body {
+  font-family: "Roboto", "Noto Sans JP", Arial, "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 16px;
+
+  color: var(--text-color);
+}
+
+:root {
+  --link-color: #349bf4;
+  --main-color: #dd1b57;
+  --text-color: #333;
+}
+
+a {
+  text-decoration: none;
+
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--main-color);
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+ul {
+  list-style: none;
+}
+
+.active {
+  opacity: .5;
+}
+
+.gnavi .active-main {
+  color: var(--main-color);
+}
+
+
+
+/* ----------------------------------------------
+ news-list↓
+---------------------------------------------- */
+
+.news-list {
+  width: 75%;
+}
+
+.news-item {
+  padding: 16px;
+
+  border-bottom: 2px solid #ededed;
+}
+
+.news-link {
+  display: flex;
+}
+
+
+.news-link .datatime {
+  margin-right: 24px;
+}
+
+.h-news-link {
+  font-weight: normal;
+}
+
+
+/* ----------------------------------------------
+ header↓
+---------------------------------------------- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 90px;
+  padding: 0 72px;
+}
+
+header .gnavi-list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 320px;
+}
+
+header .sp-menu {
+  display: none;
+}
+
+
+
+header .hide-navi {
+  display: none;
+}
+
+
+
+
+
+/* ----------------------------------------------
+ hero↓
+---------------------------------------------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 600px;
+
+  text-align: center;
+
+  background-image: url(../img/pc_mv.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.hero .h-main .title {
+  font-size: 160px;
+
+  display: block;
+
+  color: #fff;
+}
+
+.hero .h-main .subtitle {
+  font-size: 24px;
+
+  display: block;
+
+  color: #fff;
+}
+
+/* ----------------------------------------------
+ news↓
+---------------------------------------------- */
+.news {
+  display: flex;
+
+  margin-top: 64px;
+}
+
+.news .h-news {
+  font-size: 40px;
+
+  width: 25%;
+
+  color: var(--main-color);
+}
+
+
+
+/* ----------------------------------------------
+ service↓
+---------------------------------------------- */
+.service {
+  margin-top: 72px;
+}
+
+.service .h-service {
+  font-size: 40px;
+
+  position: relative;
+
+  color: var(--main-color);
+}
+
+.service .h-service::after {
+  font-size: 168px;
+
+  position: absolute;
+  z-index: -1;
+  top: -20px;
+  right: -30px;
+
+  content: "SERVICE";
+
+  color: #f2f2f2;
+}
+
+
+.service .service-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 56px;
+}
+
+.service .service-list-item {
+  box-sizing: border-box;
+  width: calc((100% - 64px) / 3);
+  padding: 50px;
+
+  text-align: center;
+
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 3px 21px rgb(0 0 0 / 16%);
+}
+
+.service .material-icons-round {
+  font-size: 48px;
+
+  color: var(--main-color);
+}
+
+.service .h-service-list-item {
+  margin-top: 16px;
+}
+
+.service .content-service-item {
+  margin-top: 16px;
+
+  text-align-last: left;
+}
+
+
+
+/* ----------------------------------------------
+ message↓
+---------------------------------------------- */
+.img-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 190px;
+
+  background-image: url(../img/pc_header.jpg);
+}
+
+.message-tittle {
+  font-size: 40px;
+
+  text-align: center;
+
+  color: #fff;
+}
+
+.message-container {
+  width: 70%;
+  max-width: 820px;
+  margin: 64px auto 0;
+}
+
+.message-content {
+  text-align: center;
+}
+
+.message-comment {
+  font-size: 40px;
+
+  display: block;
+
+  color: var(--main-color);
+}
+
+.message-subcomment {
+  font-size: 18px;
+
+  display: block;
+
+  margin-top: 24px;
+}
+
+.ceo {
+  margin: 40px auto 0;
+}
+
+.ceo-img {
+  float: left;
+
+  width: 100px;
+  margin: 0 16px 8px 0;
+
+  border-radius: 50%;
+}
+
+.ceo-message {
+  line-height: 1.6;
+
+  letter-spacing: 0.05em;
+}
+
+.ceo-message a {
+  color: var(--link-color);
+}
+
+.message-hero {
+  margin-top: 80px;
+
+  text-align: center;
+}
+
+.message-hero img {
+  width: calc(100% - 128px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* ----------------------------------------------
+ company↓
+---------------------------------------------- */
+.company-tittle {
+  font-size: 40px;
+
+  text-align: center;
+
+  color: #fff;
+}
+
+.company-container {
+  width: calc(100% - 128px);
+  max-width: 1200px;
+  margin: 80px auto 0;
+}
+
+
+.info-table {
+  font-size: 16px;
+
+  width: 100%;
+}
+
+.info-table tr {
+  height: 64px;
+  padding: 8px;
+
+  border-bottom: 2px solid #ddd;
+}
+
+.info-table th {
+  width: 20%;
+  padding: 30px;
+
+  text-align: left;
+}
+
+
+.info-table td {
+  padding: 30px;
+
+  text-align: left;
+}
+
+
+.company-info-access {
+  margin-top: 54px;
+}
+
+.company-info-map iframe {
+  height: 400px;
+}
+
+.company-info-map-link {
+  margin-top: 24px;
+
+  text-align: right;
+}
+
+
+.company-info-map-link a {
+  font-size: 14px;
+
+  text-decoration: underline;
+
+  color: var(--link-color);
+}
+
+
+.company-info-access .news-list {
+  width: 100%;
+  margin-top: 80px;
+}
+
+
+
+
+
+/* ----------------------------------------------
+ footer↓
+---------------------------------------------- */
+footer {
+  height: 164px;
+  margin-top: 128px;
+
+  background-color: var(--main-color);
+}
+
+footer .gnavi-list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 400px;
+  padding: 64px 0 16px 64px;
+}
+
+footer .gnavi-link {
+  color: #fff;
+}
+
+footer .copyright {
+  padding-left: 64px;
+
+  color: #fff;
+}
+
+
+/* ----------------------------------------------
+ レスポンシブ対応↓
+---------------------------------------------- */
+@media (max-width: 767px) {
+  /* ----------------------------------------------
+ レスポンシブ対応 common↓
+---------------------------------------------- */
+  body {
+    font-size: 14px;
+  }
+
+
+  .news-list {
+    width: 100%;
+  }
+
+  .news-link {
+    font-size: 16px;
+
+    flex-direction: column;
+
+    margin-top: 24px;
+  }
+
+  .h-news-link {
+    margin-top: 8px;
+  }
+
+
+  /* ----------------------------------------------
+ レスポンシブ対応 header↓
+---------------------------------------------- */
+  header {
+    height: 60px;
+    padding: 0;
+  }
+
+  header .logo {
+    padding: 20px;
+  }
+
+
+
+  header .sp-menu {
+    display: flex;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: var(--main-color);
+  }
+
+
+  header .material-icons-round {
+    font-size: 40px;
+
+    margin: 0 auto;
+
+    color: #fff;
+  }
+
+
+  header .gnavi {
+    display: none;
+  }
+
+
+
+  header .hide-navi {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    width: 240px;
+    height: 100%;
+
+    transition: opacity .6s,transform .6s;
+    transform: translateX(80px);
+    pointer-events: none;
+
+    opacity: 0;
+    background-color: var(--main-color);
+    box-shadow: -10px 0 35px -20px rgb(0 0 0 / 25%);
+  }
+
+
+  header .hide-navi.show {
+    transform: none;
+    pointer-events: auto;
+
+    opacity: 1;
+  }
+
+  header #close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transition: opacity .6s;
+    pointer-events: none;
+
+    opacity: 0;
+  }
+
+  header #close.show {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+
+    display: flex;
+
+    pointer-events: auto;
+
+    opacity: 1;
+  }
+
+
+
+  header .hide-gnavi-list {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  header .hide-gnavi-item {
+    margin-top: 24px;
+    padding-left: 24px;
+  }
+
+  header .hide-gnavi-link {
+    font-size: 16px;
+
+    color: #fff;
+  }
+
+
+
+  header #open.hide {
+    pointer-events: none;
+
+    opacity: 0;
+  }
+
+
+  header #open {
+    transition: opacity .6s;
+  }
+
+
+
+
+
+  /* ----------------------------------------------
+ レスポンシブ対応 hero↓
+---------------------------------------------- */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 460px;
+
+    text-align: center;
+
+    background-image: url(../img/sp_mv.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .hero .h-main .title {
+    font-size: 80px;
+  }
+
+  .hero .h-main .subtitle {
+    font-size: 20px;
+  }
+
+
+  /* ----------------------------------------------
+ レスポンシブ対応 news↓
+---------------------------------------------- */
+  .news {
+    display: block;
+
+    margin-top: 32px;
+  }
+
+  .news .h-news {
+    font-size: 32px;
+
+    width: 100%;
+  }
+
+
+
+
+  /* ----------------------------------------------
+ レスポンシブ対応 service↓
+---------------------------------------------- */
+  .service {
+    margin-top: 64px;
+  }
+
+  .service .h-service {
+    font-size: 32px;
+  }
+
+  .service .h-service::after {
+    font-size: 72px;
+
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    right: -20px;
+
+    content: "SERVICE";
+
+    color: #f2f2f2;
+  }
+
+
+  .service .service-list {
+    display: block;
+
+    margin-top: 0;
+  }
+
+
+  .service .service-list-item {
+    width: 100%;
+    height: 240px;
+    margin-top: 24px;
+  }
+
+
+
+
+  /* ----------------------------------------------
+ レスポンシブ対応 message↓
+---------------------------------------------- */
+  .img-header {
+    height: 160px;
+
+    background-image: url(../img/sp_header.jpg);
+  }
+
+  .message-tittle {
+    font-size: 32px;
+  }
+
+  .message-container {
+    width: 90%;
+    margin-top: 64px;
+  }
+
+
+  .message-comment {
+    font-size: 24px;
+  }
+
+  .message-subcomment {
+    font-size: 16px;
+
+    margin-top: 24px;
+  }
+
+  .ceo {
+    margin-top: 32px;
+  }
+
+  .ceo-img {
+    margin: 0 16px 16px 0;
+  }
+
+  .message-hero {
+    margin-top: 56px;
+  }
+
+  .message-hero img {
+    width: calc(100% - 48px);
+    height: 260px;
+
+    object-fit: cover;
+  }
+
+
+
+
+  /* ----------------------------------------------
+ レスポンシブ対応 company↓
+---------------------------------------------- */
+  .company-tittle {
+    font-size: 28px;
+  }
+
+  .company-container {
+    width: calc(100% - 48px);
+    margin-top: 56px;
+  }
+
+
+  .info-table {
+    font-size: 14px;
+
+    width: 100%;
+  }
+
+  .info-table tr {
+    height: 64px;
+    padding: 8px;
+
+    border-bottom: 2px solid #ddd;
+  }
+
+  .info-table th {
+    width: 25%;
+  }
+
+
+  .company-info-map-link {
+    margin-top: 16px;
+  }
+
+  .company-info-access .news-list {
+    margin-top: 48px;
+  }
+
+  /* ----------------------------------------------
+ レスポンシブ対応 footer↓
+---------------------------------------------- */
+  footer {
+    height: 120px;
+    margin-top: 64px;
+  }
+
+  footer .gnavi-list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 240px;
+    padding: 32px 0 24px 32px;
+  }
+
+
+  footer .copyright {
+    padding-left: 24px;
+  }
+}
